@@ -1,5 +1,7 @@
 package classes;
+
 import java.util.*;
+
 public class JogoDaVelha {
     public static void main(String[] args) {
         List<List<String>> matriz = new ArrayList<>();
@@ -41,7 +43,7 @@ public class JogoDaVelha {
                 System.out.println("Escolha a linha que voce quer joga entre 1 2 3 e deopis a coluna entre 1 2 3: coloque os 2 numeros separados por espaço ");
                 int linha = sc.nextInt() - 1;
                 int coluna = sc.nextInt() - 1;
-                if (linha >= 3 || coluna >= 3) {
+                if (linha >= 3 || coluna >= 3 || linha < 0 || coluna < 0) {
                     System.out.println("linha ou coluna invalidos");
                 } else if (!matriz.get(linha).get(coluna).equals(" ")) {
                     System.out.println("posição ja usada pelo jogador " + matriz.get(linha).get(coluna) + ":");
