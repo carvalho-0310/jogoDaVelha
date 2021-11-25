@@ -55,6 +55,7 @@ public class JogoDaVelha {
             }
         } catch (InputMismatchException e) {
             System.out.println("entrada invalida");
+            jogar(matriz, jogador);
         }
     }
 
