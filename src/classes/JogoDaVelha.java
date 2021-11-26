@@ -40,7 +40,7 @@ public class JogoDaVelha {
             Scanner sc = new Scanner(System.in);
             boolean jogadaInvalida = true;
             while (jogadaInvalida) {
-                System.out.println("Escolha a linha que voce quer joga entre 1 2 3 e deopis a coluna entre 1 2 3: coloque os 2 numeros separados por espaço ");
+                System.out.println("Escolha a linha que você quer joga entre 1 2 3 e depois a coluna entre 1 2 3: coloque os 2 numeros separados por espaço ");
                 int linha = sc.nextInt() - 1;
                 int coluna = sc.nextInt() - 1;
                 if (linha >= 3 || coluna >= 3 || linha < 0 || coluna < 0) {
